@@ -1,0 +1,95 @@
+.datatable {
+  height: 600px;
+  padding: 20px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .datatableTitle {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 24px;
+    color: gray;
+
+    .addButton {
+      padding: 10px;
+      color: #059669;
+      border: none;
+      cursor: pointer;
+      background-color: transparent;
+      &:hover {
+        border-radius: 50%;
+        background-color: rgba(156, 39, 176, 0.04);
+      }
+    }
+  }
+
+  .cellWithImg {
+    display: flex;
+    align-items: center;
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+    &.relote {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: dodgerblue;
+    }
+    &.trip {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: brown;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    & button {
+      padding: 8px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      &:hover {
+        border-radius: 50%;
+        background-color: rgba(156, 39, 176, 0.04);
+      }
+    }
+    .viewButton {
+      color: #0369a1;
+    }
+    .updateButton {
+      color: #94a3b8;
+    }
+    .deleteButton {
+      color: #be123c;
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.systems-page {
+  height: 80%;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-row {
+      padding: 0 10px;
+
+      @media (min-width: 576px) {
+        flex: 0 0 auto;
+        width: 100%;
+      }
+
+      @media (min-width: 992px) {
+        flex: 0 0 auto;
+        width: 25%;
+      }
+
+      .card {
+        position: relative;
+        height: 120px;
+        margin-bottom: 10px;
+        background-clip: border-box;
+        border: 0 solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+          webkit-transform: translateY(-4px) scale(1.01);
+          -moz-transform: translateY(-4px) scale(1.01);
+          -ms-transform: translateY(-4px) scale(1.01);
+          -o-transform: translateY(-4px) scale(1.01);
+          transform: translateY(-4px) scale(1.01);
+          -webkit-box-shadow: 0 14px 24px rgb(62 57 107 / 10%);
+          box-shadow: 0 14px 24px rgb(62 57 107 / 10%);
+        }
+
+        .card-body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+
+          .card-icon {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            color: #fff;
+            opacity: .5;
+            font-size: 45px;
+            font-weight: 300;
+            line-height: 1.2;
+            text-align: center
+          }
+
+          .card-title {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            position: relative;
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+          }
+        }
+      }
+
+      .card-hover {
+        -webkit-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        -moz-transition: all .25s ease;
+        transition: all .25s ease;
+      }
+
+      .blue {
+        background-color: #2563eb;
+      }
+
+      .sky {
+        background-color: #0284c7;
+      }
+
+      .cyan {
+        background-color: #06b6d4;
+      }
+
+      .teal {
+        background-color: #0d9488;
+      }
+    }
+  }
+
+  .system-video {
+    display: inline-block;
+    vertical-align: baseline;
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+
+    @media (max-width: 1020px) {
+      height: 40%;
+    }
+  }
+}

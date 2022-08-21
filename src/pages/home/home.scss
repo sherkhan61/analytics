@@ -1,0 +1,197 @@
+.dashboard {
+  background-color: #f0f2f5;
+
+  .welcome-card {
+    position: relative;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    background: linear-gradient(to right, #41a6f6 0%, #425be0 100%);
+
+    .card-body {
+      flex: 1 1 auto;
+      padding: 1rem;
+
+      .card-title {
+        font-size: 16px;
+        position: relative;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      .card-subtitle {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: #fff;
+        opacity: .5;
+      }
+
+      .systems-info {
+        display: flex;
+        flex: 0 0 auto;
+
+        @media (min-width: 576px) {
+          width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+          width: 33%;
+        }
+
+        .systems-amount {
+          color: #fff;
+          opacity: 1;
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+        .systems-name {
+          color: #fff;
+          opacity: .5;
+          font-size: 14px;
+        }
+      }
+
+      .widgets-column {
+        display: flex;
+        flex: 0 0 auto;
+
+        @media (min-width: 576px) {
+          width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+          width: 66%;
+        }
+
+        .widgets-row {
+          --bs-gutter-x: 20px;
+          --bs-gutter-y: 0;
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: calc(-1 * var(--bs-gutter-y));
+          margin-right: calc(-.5 * var(--bs-gutter-x));
+          margin-left: calc(-.5 * var(--bs-gutter-x));
+
+          .widgets-cards {
+            flex: 0 0 auto;
+            padding-right: calc(var(--bs-gutter-x) * .5);
+            padding-left: calc(var(--bs-gutter-x) * .5);
+            margin-top: var(--bs-gutter-y);
+            margin-right: 10px;
+            @media (min-width: 576px) {
+              width: 100%;
+            }
+            @media (min-width: 768px) {
+              width: 22%;
+            }
+
+            .card {
+              display: flex;
+              align-items: center;
+
+              .card-icon {
+                display: flex;
+                margin-right: 8px;
+                color: #fff;
+                opacity: .5;
+                font-size: 45px;
+                font-weight: 300;
+                line-height: 1.2;
+                text-align: center
+              }
+
+              .card-amount {
+                color: #fff;
+                opacity: 1;
+                margin-bottom: 0;
+                font-size: 20px;
+              }
+
+              .card-text {
+                color: #fff;
+                opacity: .5;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .column-card {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .card-body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  .team-card {
+    .card-body {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .pie-card {
+        margin-bottom: 10px;
+        width: 45%;
+        background-color: #fff;
+        border: 0 solid transparent;
+        border-radius: 4px;
+
+        @media (max-width: 1262px) {
+          width: 100%;
+        }
+
+        .card-title {
+          padding: 16px 0 0 16px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+
+      .bar-card {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 16px;
+        width: 54%;
+        background-color: #fff;
+        border: 0 solid transparent;
+        border-radius: 4px;
+
+        @media (max-width: 1262px) {
+          margin: 0;
+          width: 100%;
+        }
+
+        .card-title {
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
